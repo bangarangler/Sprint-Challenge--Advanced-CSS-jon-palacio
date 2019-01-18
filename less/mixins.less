@@ -4,3 +4,25 @@
 	justify-content: @justify;
 	align-items: @align;
 }
+
+.custom-header(@size, @weight) {
+	font-size: @size;
+	font-weight: @weight;
+}
+
+// custom button mixin
+.custom-btn(@width, @height, @color) {
+	width: @width;
+	height: @height;
+	background-color: @color;
+	.custom-layout(center, center);
+	cursor: pointer;
+
+	&:hover {
+		color: @btn-bg-color;
+		background-color: @porcelain;
+		border: 1px solid @btn-bg-color;
+		font-weight: 500;
+		font-size: 1.8rem;
+	}
+}

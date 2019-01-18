@@ -1,3 +1,32 @@
+// header-container section
+.header-container {
+	.custom-layout(center, center);
+	flex-direction: column;
+	background: @nav-bg;
+	width: 100%;
+	margin: -1% auto 0;
+	padding: 2%;
+
+	@media @phone {
+		margin: -2% auto 0;
+	}
+
+	h1 {
+		.custom-header(4.0rem, 700);
+		margin-bottom: 2%;
+	}
+}
+
+.main-img {
+	.custom-layout(center, center);
+	width: 100%;
+	margin: 0 auto;
+	border: @showMe;
+
+	img {
+		width: 100%;
+	}
+}
 // Home Content
 
 .home {
@@ -11,7 +40,7 @@
     p {
       padding:0 15px;
     }
-  
+
   }
 
   .space-images {
@@ -64,7 +93,7 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
@@ -73,3 +102,11 @@
     }
   }
 }// home
+
+// button styling
+
+.btn {
+	.custom-btn(100px, 35px, @btn-bg-color);
+	color: @porcelain;
+	font-size: 1.5rem;
+}
