@@ -1,0 +1,34 @@
+What is the difference between an adaptive website and a fully responsive website?
+
+adaptive website isn't one layout that changes. but many layouts that change
+with breakpoints set at different screen sizes.
+responsive is one layout that "responds" to the screen size.
+
+Describe what it means to be mobile first vs desktop first.
+
+mobile first would use min-width media queries and would be designed for
+"mobile first" so much content is consumed on phones now that it makes since
+but can make designing more difficult as you have to be much more selective
+with your content.  desktop first is with max-width in mind and you simply
+make it responsive from big to small. it's typically easier to design as
+no limits to creativity really but you may lose some of the elements when you
+start to scale down for smaller screens.
+
+What does font-size: 62.5% in the html tag do for us when using rem units?
+
+it gives us the ability to use rem by having it make 1rem = 10px. easier to
+think about, easier to work with.
+
+How would you describe preprocessing to someone new to CSS?
+
+its a way to write css that gives you lots of added perks for a very small
+learning curve. it will save you time in your css files and arguably is much
+easier to read if you abide by some basic rules and don't let your nesting get
+out of hand.
+
+What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+favorite concept is well honestly kind of like all of it. very helpful tool.
+most trouble. probably just changing mind set from normal css to a
+preprocessor. once you know it it's really hard to want to go back to the old
+way.

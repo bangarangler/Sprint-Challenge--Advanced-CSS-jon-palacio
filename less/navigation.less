@@ -1,1 +1,34 @@
 // Navigation code here
+.flexNav {
+	.custom-layout(center, center);
+	width: 100%;
+	/*border: @showMe;*/
+
+	a {
+		text-decoration: none;
+		margin: 0 2%;
+		.custom-header(1.5rem, 400);
+		color: @river-bend;
+
+		//stretch animations
+		&:hover {
+			border-bottom: 2px solid @river-bend;
+			animation-duration: 1s;
+			animation-name: move;
+		}
+
+		@keyframes move {
+			from {
+				margin-bottom: 25%;
+			}
+
+			to {
+				margin-right: 0%;
+			}
+		}
+
+		@media @phone {
+			margin: 0 4%;
+		}
+	}
+}
